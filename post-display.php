@@ -36,6 +36,7 @@
                 <th>title</th>
                 <th>user_id</th>
                 <th>content</th>
+                <th>update</th>
             </tr>
 
             <?php
