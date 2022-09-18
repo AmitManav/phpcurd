@@ -36,7 +36,7 @@
                 <th>name</th>
                 <th>email</th>
                 <th>phone</th>
-                <th>password</th>
+              
                 <th>Status</th>
             </tr>
 
@@ -54,7 +54,7 @@
               <td><?php echo $row['name'] ?></td>
               <td><?php echo $row['email'] ?></td>
               <td><?php echo $row['phone'] ?></td>
-              <td><?php echo $row['password'] ?></td>
+              
               <td><a href="edit.php?id=<?php echo $row['id'];?>"><i class="fa-regular fa-pen-to-square"></i></a>&nbsp
                   <a href="delete.php?id=<?php echo $row['id'];?>"><i class="fa-solid fa-trash-can"></i></a></td>
           </tr>

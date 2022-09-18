@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
     $name=$_POST['name'];
     $email=$_POST['email'];
     $phone=$_POST['phone'];
-    $password=$_POST['password'];
+    $password=md5($_POST['password']);
 
     $data="INSERT INTO `curd`(`name`, `email`, `phone`, `password`) VALUES ('$name','$email','$phone','$password')";
     $query = mysqli_query($conn, $data);
