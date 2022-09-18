@@ -9,6 +9,6 @@
 
     if($query){
         header("location:post-display.php");
-    }clear
+    }
 
 ?>
