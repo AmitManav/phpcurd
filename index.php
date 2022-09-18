@@ -27,7 +27,7 @@
   </head>
   <body>
   <div class="container">
-        <a class="btn btn-primary add" href="insert.php">Add Data</a>
+        <a class="btn btn-primary add" href="insert.php">Insert Data</a>
     </div>
     <div>
     <table>
