@@ -3,7 +3,7 @@
 
     $id=$_GET['id'];
 
-    $data = "DELETE FROM `curd` WHERE `id` = '$id'";
+    $data = "DELETE FROM `users` WHERE `id` = '$id'";
 
     $query =  mysqli_query($conn, $data);
 

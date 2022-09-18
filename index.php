@@ -36,13 +36,12 @@
                 <th>name</th>
                 <th>email</th>
                 <th>phone</th>
-              
                 <th>Status</th>
             </tr>
 
             <?php
                 include("config.php");
-                $sql="SELECT* FROM `curd`";
+                $sql="SELECT* FROM `users`";
                 $query=mysqli_query($conn,$sql);
 
                 while($row=mysqli_fetch_array($query)){

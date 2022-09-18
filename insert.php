@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
     $phone=$_POST['phone'];
     $password=md5($_POST['password']);
 
-    $data="INSERT INTO `curd`(`name`, `email`, `phone`, `password`) VALUES ('$name','$email','$phone','$password')";
+    $data="INSERT INTO `users`(`name`, `email`, `phone`, `password`) VALUES ('$name','$email','$phone','$password')";
     $query = mysqli_query($conn, $data);
 
     if($query){

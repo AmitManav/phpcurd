@@ -3,7 +3,7 @@
 
     $id=$_GET['id'];
 
-    $sql="SELECT* FROM `curd` WHERE '$id'=`id`";
+    $sql="SELECT* FROM `users` WHERE '$id'=`id`";
     $query=mysqli_query($conn,$sql);
 
     while($row=mysqli_fetch_array($query)){
@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
     $phone=$_POST['phone'];
     $password=$_POST['password'];
 
-    $data="UPDATE `curd` SET `name`='$name', `email`='$email', `phone`='$phone', `password`='$password' WHERE `id`='$id'";
+    $data="UPDATE `users` SET `name`='$name', `email`='$email', `phone`='$phone', `password`='$password' WHERE `id`='$id'";
     $query1 = mysqli_query($conn, $data);
 
     if($query1){
